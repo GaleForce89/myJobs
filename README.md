@@ -2,5 +2,5 @@
 Discover, analyze, and determine your job trends
 
 # Example run
-![Screenshot](top10-example.png)
-![Screenshot](ts-example.png)
+![Screenshot](top10_example.png)
+![Screenshot](ts_example.png)
