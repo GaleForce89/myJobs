@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Project myJobs by Zachary Gale
+Project myJobs by Galeforce
 Analytics personalized.
 
 myJobs, a simple and straightforward way to collect and determine trending jobs
