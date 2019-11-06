@@ -31,7 +31,7 @@ def main():
     '''
 
     # max results per city when scraping multiple locations
-    maxCity_set = 150
+    maxCity_set = 20
 
     # Modify and use when gathering data from multiple areas
     citySet = [
@@ -296,8 +296,11 @@ Arguments:
 
                 # Get summary information
                 # \w for chars/nums + for multiple and space in our group ()
-                d = div.find(name='span', attrs={'class': 'summary'})
-                summaryText = "".join(re.findall(r"(\w+ )", d.text.strip()))
+                try:
+                    d = div.find(name='span', attrs={'class': 'summary'})
+                    summaryText = "".join(re.findall(r"(\w+ )", d.text.strip()))
+                except:
+                    summaryText = "N/A"
                 jobPost.append(summaryText)
 
                 # grabbing salary
